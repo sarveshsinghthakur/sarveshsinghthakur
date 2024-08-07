@@ -3,7 +3,6 @@
 - 🌱 I’m currently learning : New ERA...
 - 💞️ I’m looking to collaborate on : Devlopments...
 - 📫 How to reach me : EVERY-WAYS
-- 😄 Pronouns: HE
 - ⚡ Fun fact: I Know Everyone
 
 <!---
