@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=FF5733&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Sarvesh+Singh+Thakur!+%F0%9F%9A%80;Software+Developer+%7C+Tech+Enthusiast;Always+Learning+and+Building" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=2E95F7&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Sarvesh+Singh+Thakur!+%F0%9F%9A%80;Full-Stack+Developer+%7C+Data+Scientist+%7C+ECE+Engineer;Building+Innovative+Tech+Solutions" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -10,12 +10,13 @@
   <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn">
   </a>
+  <a href="https://sarveshsinghthakur.github.io/Portfolio/">
+    <img src="https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=safari&logoColor=white" alt="Portfolio">
+  </a>
 </div>
 
----
-
 <p align="center">
-  <em>Passionate about <b>Full-Stack Development</b>, <b>AI</b>, and building real-world applications that make a difference.</em>
+  <em>Passionate about Full-Stack Development, AI, and building innovative tech solutions.</em>
 </p>
 
 ---
@@ -25,12 +26,11 @@
 <div align="center">
   <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </div>
 
 ---
@@ -60,12 +60,21 @@
 
 ---
 
+## 📊 Most Used Languages
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarveshsinghthakur&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</div>
+
+---
+
 ## 🎯 Current Focus & Mission
 
 ```typescript
-const sarvesh = {
-    mission: "Build impactful software that solves real-world problems",
-    focus: ["Full-Stack Development", "AI & ML", "Cloud Deployment"],
-    currentlyLearning: ["Web3", "Quantum Computing", "Advanced AI Models"],
-    askMeAbout: ["JavaScript", "Python", "Next.js", "Django", "Full-Stack Projects"]
+const sarveshSinghThakur = {
+    mission: "Innovate and deliver impactful tech solutions",
+    focus: ["Full-Stack Development", "Data Science", "AI"],
+    currentlyBuilding: "Cutting-edge web applications and data-driven projects",
+    learning: ["Advanced Machine Learning", "Cloud Computing"],
+    askMeAbout: ["Web Development", "Data Analysis", "AI Integration"]
 };
