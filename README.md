@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/followers/sarveshsinghthakur?label=Follow&style=social" alt="GitHub followers">
   </a>
   <img src="https://komarev.com/ghpvc/?username=sarveshsinghthakur&color=blue" alt="Profile Views">
-  <a href="https://www.linkedin.com/in/sarvesh-thakur">
+  <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn">
   </a>
 </div>
