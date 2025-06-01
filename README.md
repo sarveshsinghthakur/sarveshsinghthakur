@@ -69,8 +69,8 @@
 |---------|-------------|------|
 | [📓 Deep Learning](https://github.com/sarveshsinghthakur/deep_learning) | Deep learning models, experiments, and research notes | Python, TensorFlow, PyTorch |
 | [🤖 Machine Learning](https://github.com/sarveshsinghthakur/machine_learning) | Classic ML algorithms, projects, and study materials | Python, scikit-learn, pandas |
-| [📝 Live Docs](https://github.com/sarveshsinghthakur/live_docs) | Real-time collaborative documentation editor | React, Node.js, WebSockets |
-| [📹 Zoom Clone](https://github.com/sarveshsinghthakur/zoom_clone) | Video conferencing app (Zoom clone) | Node.js, WebRTC, Socket.io, React |
+| [📝 Live Docs](https://github.com/sarveshsinghthakur/Livedocs) | Real-time collaborative documentation editor | React, Node.js, WebSockets |
+| [📹 Zoom Clone](https://github.com/sarveshsinghthakur/BOOM---ZOOM_Clone---) | Video conferencing app (Zoom clone) | Node.js, WebRTC, Socket.io, React |
 | [More...](https://github.com/sarveshsinghthakur?tab=repositories) | See all repos | Various |
 
 ---
