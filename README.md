@@ -69,8 +69,8 @@
 |---------|-------------|------|
 | [📓 Deep Learning](https://github.com/sarveshsinghthakur/deep_learning) | Deep learning models, experiments, and research notes | Python, TensorFlow, PyTorch |
 | [🤖 Machine Learning](https://github.com/sarveshsinghthakur/machine_learning) | Classic ML algorithms, projects, and study materials | Python, scikit-learn, pandas |
-| [📝 Live Docs](https://github.com/sarveshsinghthakur/Livedocs) | Real-time collaborative documentation editor | React, Node.js, WebSockets |
-| [📹 Zoom Clone](https://github.com/sarveshsinghthakur/BOOM---ZOOM_Clone---) | Video conferencing app (Zoom clone) | Node.js, WebRTC, Socket.io, React |
+| [📝 Live Docs](https://github.com/sarveshsinghthakur/live_docs) | Real-time collaborative documentation editor | React, Node.js, WebSockets |
+| [📹 Zoom Clone](https://github.com/sarveshsinghthakur/zoom_clone) | Video conferencing app (Zoom clone) | Node.js, WebRTC, Socket.io, React |
 | [More...](https://github.com/sarveshsinghthakur?tab=repositories) | See all repos | Various |
 
 ---
@@ -134,10 +134,10 @@
   <a href="https://linkedin.com/in/sarvesh-singh-1a751a28b">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="https://twitter.com/sarveshcodes">
+  <a href="https://x.com/__Sarveshsingh_">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
   </a>
-  <a href="mailto:sarveshsinghthakur@gmail.com">
+  <a href="mailto:sarvesh8882589477@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
   <a href="https://sarveshsinghthakur.github.io/Portfolio/">
