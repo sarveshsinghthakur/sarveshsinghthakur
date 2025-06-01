@@ -67,9 +67,6 @@
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [🔥 Awesome App](https://github.com/sarveshsinghthakur/awesome-app) | Next-gen productivity platform | React, Node.js, MongoDB |
-| [🧠 ML Playground](https://github.com/sarveshsinghthakur/ml-playground) | Interactive machine learning demos | Python, scikit-learn, Streamlit |
-| [🌐 Portfolio](https://sarveshsinghthakur.github.io/Portfolio/) | My personal website & blog | Next.js, Vercel |
 | [📓 Deep Learning](https://github.com/sarveshsinghthakur/deep_learning) | Deep learning models, experiments, and research notes | Python, TensorFlow, PyTorch |
 | [🤖 Machine Learning](https://github.com/sarveshsinghthakur/machine_learning) | Classic ML algorithms, projects, and study materials | Python, scikit-learn, pandas |
 | [📝 Live Docs](https://github.com/sarveshsinghthakur/live_docs) | Real-time collaborative documentation editor | React, Node.js, WebSockets |
