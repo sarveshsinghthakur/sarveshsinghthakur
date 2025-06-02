@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sarvesh Singh - Full Stack Developer Portfolio">
   <title>Sarvesh Singh - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
       --bg-color: #0d1117;
       --card-bg: #161b22;
+      --card-hover: #1c2129;
       --text-color: #e6edf3;
       --accent: #58a6ff;
       --sub-accent: #1f6feb;
       --border: #30363d;
+      --success: #238636;
+      --highlight: #388bfd26;
     }
 
     * {
@@ -21,199 +27,342 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
       color: var(--text-color);
       line-height: 1.6;
       padding: 30px 15px;
+      overflow-x: hidden;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
-      padding: 20px;
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+      padding: 25px;
     }
+
+    /* Live UTC Clock */
+    .utc-clock {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card-bg);
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      z-index: 1000;
+    }
+
+    /* Card Styles */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
+      transform: translateX(-100%);
+      opacity: 0;
+      animation: slideIn 0.5s forwards;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background: var(--card-hover);
+      transform: translateX(10px);
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Sequential Animation Delays */
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(6) { animation-delay: 0.6s; }
+    .card:nth-child(7) { animation-delay: 0.7s; }
+    .card:nth-child(8) { animation-delay: 0.8s; }
 
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: var(--accent);
+      margin-bottom: 10px;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: var(--sub-accent);
     }
 
-    section {
-      margin-bottom: 25px;
-    }
-
-    section h2 {
+    h2 {
       color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
       border-bottom: 2px solid var(--border);
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
     }
 
     ul {
-      list-style-type: square;
-      margin-left: 20px;
+      list-style: none;
     }
 
-    .tag {
-      display: inline-block;
-      background-color: var(--sub-accent);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin: 4px;
-      font-size: 0.85rem;
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .skill-tag {
+      background: var(--card-hover);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px;
+      background: var(--card-hover);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-item i {
+      color: var(--accent);
     }
 
     .link a {
       color: var(--accent);
       text-decoration: none;
+      transition: color 0.2s;
     }
 
     .link a:hover {
-      text-decoration: underline;
+      color: var(--sub-accent);
+    }
+
+    .copy-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 15px;
+      background: var(--accent);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: var(--text-color);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .copy-button:hover {
+      background: var(--sub-accent);
+      transform: translateY(-2px);
     }
 
     .footer {
       text-align: center;
-      font-size: 0.9rem;
+      padding: 20px;
       color: #8b949e;
+      border-top: 1px solid var(--border);
       margin-top: 40px;
     }
 
-    .highlight {
-      color: var(--accent);
-    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
 
-    .copy-button {
-      margin-top: 10px;
-      background-color: var(--accent);
-      border: none;
-      padding: 6px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      color: white;
-      font-size: 0.9rem;
-    }
-
-    .copy-button:hover {
-      background-color: var(--sub-accent);
-    }
-
-    @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
+
       header p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+      }
+
+      .card {
+        padding: 15px;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .utc-clock {
+        display: none;
       }
     }
   </style>
 </head>
 <body>
+  <div id="utc-clock" class="utc-clock"></div>
+  
   <div class="container">
     <header>
       <h1>Sarvesh Singh</h1>
       <p>Full-Stack Web Developer</p>
     </header>
 
-    <section>
+    <div class="card">
       <h2>Profile Summary</h2>
       <p>
         Computer Science Engineer with strong skills in software development, coding, and
         problem-solving. Experienced in delivering efficient solutions, adept in modern
         technologies, and committed to continuous learning.
       </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Education</h2>
       <ul>
         <li><strong>B.Tech - Electronics and Communication</strong> (DCRUST University, Jul 2022 - Jun 2026)</li>
         <li><strong>Senior Secondary (XII)</strong> (Dev Samaj Vidya Niketan, Mar 2022)</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Experience</h2>
       <ul>
         <li><strong>Bharat-Intern</strong> (Oct–Nov 2023) – React projects: Toolspedia, Newsloop, Chat Room (NodeJS)</li>
         <li><strong>Code Alpha</strong> (Nov 2023–Jan 2024) – Django projects: FashionFusion, Gemini Clone</li>
         <li><strong>Code Alpha</strong> (Jul–Aug 2024) – Next.js projects: Boom Clone, Live Docs</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Skills</h2>
-      <div>
-        <span class="tag">JavaScript</span>
-        <span class="tag">C</span>
-        <span class="tag">C++</span>
-        <span class="tag">Python</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">React.js</span>
-        <span class="tag">Next.js</span>
-        <span class="tag">Node.js</span>
-        <span class="tag">Express.js</span>
-        <span class="tag">Django</span>
-        <span class="tag">Flask</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">MongoDB</span>
-        <span class="tag">Linux</span>
-        <span class="tag">DSA</span>
+      <div class="skills-grid">
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">C/C++</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">HTML/CSS</div>
+        <div class="skill-tag">React.js</div>
+        <div class="skill-tag">Next.js</div>
+        <div class="skill-tag">Node.js</div>
+        <div class="skill-tag">Express.js</div>
+        <div class="skill-tag">Django</div>
+        <div class="skill-tag">Flask</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">MySQL</div>
+        <div class="skill-tag">MongoDB</div>
+        <div class="skill-tag">Linux</div>
+        <div class="skill-tag">DSA</div>
       </div>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Achievements</h2>
       <ul>
         <li>Flipkart, Amazon, Myntra, AJIO Clones – Full-stack builds</li>
         <li>OpenWeaver HTML/CSS Training (Sep 2023)</li>
         <li>Cloud-ready apps aligned with AWS standards</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Certificates</h2>
       <ul>
         <li>EY Techathon 4.0 – Participation</li>
         <li>Meme Mastermind @ IIT Patna – 3rd Position</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Languages</h2>
       <ul>
         <li>Hindi</li>
         <li>English</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Contact</h2>
-      <p><strong>Email:</strong> <span class="link"><a href="mailto:Sarvesh8882589477@gmail.com">Sarvesh8882589477@gmail.com</a></span></p>
-      <p><strong>Phone:</strong> 8882589477</p>
-      <p><strong>GitHub:</strong> <span class="link"><a href="https://github.com/sarveshsinghthakur" target="_blank">sarveshsinghthakur</a></span></p>
-      <p><strong>Portfolio:</strong> <span class="link"><a href="https://sarveshsinghthakur.github.io/Portfolio/" target="_blank">sarveshsinghthakur.github.io</a></span></p>
-      <p><strong>Location:</strong> Dhunela Berka Road, Sohna, Gurgaon, 122103</p>
-      <button class="copy-button" onclick="copyEmail()">Copy Email</button>
-    </section>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span class="link"><a href="mailto:Sarvesh8882589477@gmail.com">Sarvesh8882589477@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>8882589477</span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <span class="link"><a href="https://github.com/sarveshsinghthakur" target="_blank">sarveshsinghthakur</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-globe"></i>
+          <span class="link"><a href="https://sarveshsinghthakur.github.io/Portfolio/" target="_blank">Portfolio Website</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Dhunela Berka Road, Sohna, Gurgaon, 122103</span>
+        </div>
+      </div>
+      <button class="copy-button" onclick="copyEmail()">
+        <i class="far fa-copy"></i>
+        Copy Email
+      </button>
+    </div>
 
     <div class="footer">
       &copy; 2025 Sarvesh Singh | All rights reserved.
@@ -221,10 +370,37 @@
   </div>
 
   <script>
+    // UTC Clock Update
+    function updateUTCClock() {
+      const now = new Date();
+      const utcString = now.toISOString().replace('T', ' ').slice(0, 19);
+      document.getElementById('utc-clock').textContent = `UTC: ${utcString}`;
+    }
+    setInterval(updateUTCClock, 1000);
+    updateUTCClock();
+
+    // Copy email function with animation
     function copyEmail() {
       navigator.clipboard.writeText("Sarvesh8882589477@gmail.com");
-      alert("Email copied to clipboard!");
+      const button = document.querySelector('.copy-button');
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      
+      setTimeout(() => {
+        button.innerHTML = originalText;
+      }, 2000);
     }
+
+    // Card hover effect
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateX(10px)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateX(0)';
+      });
+    });
   </script>
 </body>
 </html>
