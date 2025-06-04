@@ -123,7 +123,6 @@
 <div align="center">
   <img src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%231a1b27&qColor=%232E95F7&aColor=%232E95F7" alt="Random Joke" />
   <br/>
-  <img src="https://github.com/sarveshsinghthakur/sarveshsinghthakur/raw/main/wave.gif" alt="Hi!" width="50px"/>
 </div>
 
 ---
