@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=2E95F7&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Sarvesh+Singh+Thakur!+%F0%9F%9A%80;Full-Stack+Developer+%7C;Data+Scientist+%7C;ECE+Engineer+%7C;Building+Innovative+Tech+Solutions" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=2E95F7&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Sarvesh+Singh+Thakur!;Full-Stack+Developer+%7C;Data+Scientist+%7C;ECE+Engineer+%7C;Building+Innovative+Tech+Solutions" alt="Typing SVG" />
 </div>
 
 <div align="center">
   <a href="https://github.com/sarveshsinghthakur">
     <img src="https://img.shields.io/github/followers/sarveshsinghthakur?label=Follow&style=social" alt="GitHub followers">
   </a>
-  <img src="https://komarev.com/ghpvc/?username=sarveshsinghthakur&color=blue" alt="Profile Views">
+ <img src="https://komarev.com/ghpvc/?username=sarveshsinghthakur&color=blue" alt="Profile Views"> 
   <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn">
   </a>
@@ -22,9 +22,7 @@
 
 <p align="center">
   <em>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZuaXhpY2p1c3JwM3J0OHd1aXp6bXZqZnM1eWc1Y2pveGkwMzl2dCZuZWFyPTQwMA8/gM5qFksULw54NMWyry/giphy.gif" width="38px" />
     Passionate about Full-Stack Development, AI, and building innovative tech solutions.
-    <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="38px" />
   </em>
 </p>
 
