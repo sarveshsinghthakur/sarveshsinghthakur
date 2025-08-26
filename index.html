@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Sarvesh Singh - Full Stack Developer Portfolio">
-  <title>Sarvesh Singh - Resume</title>
+  <title>Sarvesh Singh - Full Stack Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
 	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -26,6 +26,7 @@
       --accent: #58a6ff;
       --sub-accent: #1f6feb;
       --border: #30363d;
+      --success: #3fb950;
       transition: all 0.3s ease;
     }
 
@@ -37,6 +38,7 @@
       --accent: #0969da;
       --sub-accent: #1f6feb;
       --border: #d0d7de;
+      --success: #1a7f37;
     }
 
     * {
@@ -56,9 +58,58 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 25px;
+    }
+
+    /* Header & Navigation */
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      animation: fadeIn 0.8s ease-out;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: var(--sub-accent);
+      margin-bottom: 20px;
+    }
+
+    .header-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: var(--card-hover);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
 
     /* Theme Toggle */
@@ -120,16 +171,34 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       transform: translateX(-100%);
       opacity: 0;
       animation: slideIn 0.5s forwards;
       transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
     .card:hover {
       transform: translateX(10px);
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover::before {
+      opacity: 1;
     }
 
     @keyframes slideIn {
@@ -148,33 +217,7 @@
     .card:nth-child(6) { animation-delay: 0.6s; }
     .card:nth-child(7) { animation-delay: 0.7s; }
     .card:nth-child(8) { animation-delay: 0.8s; }
-
-    header {
-      text-align: center;
-      margin-bottom: 35px;
-      background: var(--card-bg);
-      padding: 30px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      animation: fadeIn 0.8s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      color: var(--accent);
-      margin-bottom: 10px;
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      color: var(--sub-accent);
-    }
+    .card:nth-child(9) { animation-delay: 0.9s; }
 
     h2 {
       color: var(--accent);
@@ -182,6 +225,13 @@
       border-bottom: 2px solid var(--border);
       padding-bottom: 8px;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 i {
+      font-size: 1.5rem;
     }
 
     ul {
@@ -191,10 +241,67 @@
     ul li {
       padding: 8px 0;
       border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
     }
 
     ul li:last-child {
       border-bottom: none;
+    }
+
+    ul li i {
+      color: var(--accent);
+      margin-top: 5px;
+    }
+
+    /* Timeline for experience */
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 20px;
+      width: 2px;
+      height: calc(100% + 12px);
+      background: var(--border);
+    }
+
+    .timeline-item:last-child::after {
+      display: none;
+    }
+
+    .timeline-date {
+      color: var(--sub-accent);
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .timeline-role {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .timeline-desc {
+      margin-bottom: 5px;
     }
 
     /* Skills Grid */
@@ -207,16 +314,92 @@
 
     .skill-tag {
       background: var(--card-hover);
-      padding: 10px;
+      padding: 12px;
       border-radius: 8px;
       text-align: center;
       border: 1px solid var(--border);
       transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
 
     .skill-tag:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      background: var(--accent);
+      color: white;
+    }
+
+    .skill-tag i {
+      font-size: 1.8rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .project-card {
+      background: var(--card-hover);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-title {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .project-desc {
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .tech-tag {
+      background: var(--card-bg);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      border: 1px solid var(--border);
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+      color: var(--sub-accent);
     }
 
     /* Contact Grid */
@@ -234,10 +417,17 @@
       background: var(--card-hover);
       border-radius: 8px;
       border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     .contact-item i {
       color: var(--accent);
+      font-size: 1.2rem;
     }
 
     .link a {
@@ -248,6 +438,7 @@
 
     .link a:hover {
       color: var(--sub-accent);
+      text-decoration: underline;
     }
 
     .copy-button {
@@ -280,6 +471,73 @@
       margin-top: 40px;
     }
 
+    /* Progress bars for skills */
+    .skill-level {
+      height: 6px;
+      background: var(--border);
+      border-radius: 3px;
+      margin-top: 5px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 3px;
+    }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--success);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Navigation */
+    .nav-container {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--card-bg);
+      border-radius: 50px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      z-index: 900;
+      display: flex;
+      gap: 5px;
+    }
+
+    .nav-btn {
+      padding: 8px 15px;
+      border-radius: 50px;
+      background: transparent;
+      border: none;
+      color: var(--text-color);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav-btn:hover, .nav-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 15px;
@@ -301,6 +559,10 @@
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       }
 
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -311,6 +573,17 @@
         position: static;
         margin: 10px auto;
         width: fit-content;
+      }
+
+      .nav-container {
+        width: 90%;
+        overflow-x: auto;
+        justify-content: flex-start;
+      }
+
+      .nav-btn {
+        white-space: nowrap;
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -328,82 +601,227 @@
     <header>
       <h1>Sarvesh Singh</h1>
       <p>Full-Stack Web Developer</p>
+      <div class="header-badges">
+        <div class="badge"><i class="fas fa-code"></i> React Specialist</div>
+        <div class="badge"><i class="fas fa-database"></i> Django Developer</div>
+        <div class="badge"><i class="fas fa-cloud"></i> AWS Ready</div>
+      </div>
     </header>
 
-    <div class="card">
-      <h2>Profile Summary</h2>
+    <div class="nav-container">
+      <button class="nav-btn active" onclick="scrollToSection('profile')">Profile</button>
+      <button class="nav-btn" onclick="scrollToSection('education')">Education</button>
+      <button class="nav-btn" onclick="scrollToSection('experience')">Experience</button>
+      <button class="nav-btn" onclick="scrollToSection('skills')">Skills</button>
+      <button class="nav-btn" onclick="scrollToSection('projects')">Projects</button>
+      <button class="nav-btn" onclick="scrollToSection('achievements')">Achievements</button>
+      <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+    </div>
+
+    <div class="card" id="profile">
+      <h2><i class="fas fa-user"></i> Profile Summary</h2>
       <p>
         Computer Science Engineer with strong skills in software development, coding, and
         problem-solving. Experienced in delivering efficient solutions, adept in modern
-        technologies, and committed to continuous learning.
+        technologies, and committed to continuous learning. Excels both independently and in teams.
       </p>
     </div>
 
-    <div class="card">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech - Electronics and Communication</strong> (DCRUST University, Jul 2022 - Jun 2026)</li>
-        <li><strong>Senior Secondary (XII)</strong> (Dev Samaj Vidya Niketan, Mar 2022)</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Bharat-Intern</strong> (Oct–Nov 2023) – React projects: Toolspedia, Newsloop, Chat Room (NodeJS)</li>
-        <li><strong>Code Alpha</strong> (Nov 2023–Jan 2024) – Django projects: FashionFusion, Gemini Clone</li>
-        <li><strong>Code Alpha</strong> (Jul–Aug 2024) – Next.js projects: Boom Clone, Live Docs</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-tag">JavaScript</div>
-        <div class="skill-tag">C/C++</div>
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">HTML/CSS</div>
-        <div class="skill-tag">React.js</div>
-        <div class="skill-tag">Next.js</div>
-        <div class="skill-tag">Node.js</div>
-        <div class="skill-tag">Express.js</div>
-        <div class="skill-tag">Django</div>
-        <div class="skill-tag">Flask</div>
-        <div class="skill-tag">PostgreSQL</div>
-        <div class="skill-tag">MySQL</div>
-        <div class="skill-tag">MongoDB</div>
-        <div class="skill-tag">Linux</div>
-        <div class="skill-tag">DSA</div>
+    <div class="card" id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="timeline-item">
+        <div class="timeline-date">JUL 2022 - JUN 2026</div>
+        <div class="timeline-role">B.TECH - Electronics and Communication</div>
+        <div class="timeline-desc">DCRUST University</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">MAR 2022</div>
+        <div class="timeline-role">Senior Secondary (XII)</div>
+        <div class="timeline-desc">Dev Samaj Vidya Niketan School</div>
       </div>
     </div>
 
-    <div class="card">
-      <h2>Achievements</h2>
+    <div class="card" id="experience">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="timeline-item">
+        <div class="timeline-date">OCT 2023 - NOV 2023</div>
+        <div class="timeline-role">Bharat-Intern - Full Stack Web Developer Intern</div>
+        <div class="timeline-desc">Created and deployed 3 React projects:</div>
+        <ul>
+          <li><i class="fas fa-caret-right"></i> Toolspedia - Text transformation tool</li>
+          <li><i class="fas fa-caret-right"></i> Newsloop - News API integration for latest news</li>
+          <li><i class="fas fa-caret-right"></i> Chat-Room - Live messaging with server-side rendering using React & Node.js</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">NOV 2023 - JAN 2024</div>
+        <div class="timeline-role">Code Alpha - Django Developer Intern</div>
+        <div class="timeline-desc">Created and managed 2 Django projects:</div>
+        <ul>
+          <li><i class="fas fa-caret-right"></i> FashionFusion - Ecommerce website with full frontend and backend</li>
+          <li><i class="fas fa-caret-right"></i> Gemini Clone - Replica of Google's Gemini AI chat application with real-time conversations</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">JUL 2024 - AUG 2024</div>
+        <div class="timeline-role">Code Alpha - Next JS Developer Intern</div>
+        <div class="timeline-desc">Created and managed 2 Next.js projects:</div>
+        <ul>
+          <li><i class="fas fa-caret-right"></i> Boom clone website - Live video conferencing with recording sessions</li>
+          <li><i class="fas fa-caret-right"></i> Live Docs website - Real-time collaborative document editor using Next.js, Clerk for auth, and Liveblocks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="skills">
+      <h2><i class="fas fa-code"></i> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-copyright"></i>
+          <span>C/C++</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-html5"></i>
+          <span>HTML/CSS</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-react"></i>
+          <span>React.js</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-server"></i>
+          <span>Next.js</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-bolt"></i>
+          <span>Express.js</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-python"></i>
+          <span>Django</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-flask"></i>
+          <span>Flask</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-database"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-database"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fab fa-linux"></i>
+          <span>Linux</span>
+        </div>
+        <div class="skill-tag">
+          <i class="fas fa-project-diagram"></i>
+          <span>DSA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="projects">
+      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">FashionFusion</h3>
+            <p class="project-desc">Ecommerce website built with Django featuring both frontend and backend functionality.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Ecommerce</span>
+            </div>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Gemini Clone</h3>
+            <p class="project-desc">Replica of Google's Gemini AI chat application with real-time conversations and context-aware responses.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">AI</span>
+              <span class="tech-tag">Real-time</span>
+            </div>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Live Docs</h3>
+            <p class="project-desc">Real-time collaborative document editor using Next.js, Clerk for authentication, and Liveblocks for multi-user editing.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Clerk</span>
+              <span class="tech-tag">Liveblocks</span>
+            </div>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Boom Clone</h3>
+            <p class="project-desc">Video conferencing application with live sessions and recording capabilities.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">WebRTC</span>
+              <span class="tech-tag">Recording</span>
+            </div>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="achievements">
+      <h2><i class="fas fa-trophy"></i> Achievements</h2>
       <ul>
-        <li>Flipkart, Amazon, Myntra, AJIO Clones – Full-stack builds</li>
-        <li>OpenWeaver HTML/CSS Training (Sep 2023)</li>
-        <li>Cloud-ready apps aligned with AWS standards</li>
+        <li><i class="fas fa-medal"></i> Flipkart Clone – Built using HTML, CSS, JavaScript, React.js, Node.js, and Express.js</li>
+        <li><i class="fas fa-medal"></i> Amazon, Myntra & AJIO Clones – Full-stack replicas with Python, React.js, Node.js and Express.js</li>
+        <li><i class="fas fa-medal"></i> OpenWeaver HTML/CSS Training (Sep 2023) – Gained hands-on skills in responsive web design</li>
+        <li><i class="fas fa-medal"></i> Strong foundation in Data Structures & Algorithms, optimizing performance in web apps</li>
+        <li><i class="fas fa-medal"></i> Cloud-ready apps aligned with AWS Community Builders (Nov 2023) standards</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Certificates</h2>
+      <h2><i class="fas fa-certificate"></i> Certificates</h2>
       <ul>
-        <li>EY Techathon 4.0 – Participation</li>
-        <li>Meme Mastermind @ IIT Patna – 3rd Position</li>
+        <li><i class="fas fa-award"></i> EY Techathon 4.0 – Participation Certificate</li>
+        <li><i class="fas fa-award"></i> Meme Mastermind @ IIT Patna – 3rd Position Certificate</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Languages</h2>
+      <h2><i class="fas fa-language"></i> Languages</h2>
       <ul>
-        <li>Hindi</li>
-        <li>English</li>
+        <li><i class="fas fa-check-circle"></i> Hindi</li>
+        <li><i class="fas fa-check-circle"></i> English</li>
       </ul>
     </div>
 
-    <div class="card">
-      <h2>Contact</h2>
+    <div class="card" id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
       <div class="contact-grid">
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
@@ -416,6 +834,10 @@
         <div class="contact-item">
           <i class="fab fa-github"></i>
           <span class="link"><a href="https://github.com/sarveshsinghthakur" target="_blank">sarveshsinghthakur</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <span class="link"><a href="https://linkedin.com/in/sarvesh-singh" target="_blank">Sarvesh Singh</a></span>
         </div>
         <div class="contact-item">
           <i class="fas fa-globe"></i>
@@ -436,6 +858,8 @@
       &copy; 2025 Sarvesh Singh | All rights reserved.
     </div>
   </div>
+
+  <div id="toast" class="toast">Email copied to clipboard!</div>
 
   <script>
     // Theme toggle
@@ -471,13 +895,17 @@
     // Copy email function
     function copyEmail() {
       navigator.clipboard.writeText("Sarvesh8882589477@gmail.com");
-      const button = document.querySelector('.copy-button');
-      const originalText = button.innerHTML;
-      button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      showToast();
+    }
+
+    // Show toast notification
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
       
       setTimeout(() => {
-        button.innerHTML = originalText;
-      }, 2000);
+        toast.classList.remove('show');
+      }, 3000);
     }
 
     // Card hover effect
@@ -490,6 +918,62 @@
         card.style.transform = 'translateX(0)';
       });
     });
+
+    // Scroll to section function
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        
+        // Update active nav button
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        document.querySelector(`.nav-btn[onclick="scrollToSection('${sectionId}')"]`).classList.add('active');
+      }
+    }
+
+    // Intersection Observer for nav highlights
+    const sections = document.querySelectorAll('.card');
+    const navButtons = document.querySelectorAll('.nav-btn');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id;
+          navButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('onclick').includes(sectionId)) {
+              btn.classList.add('active');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Add animation to skill tags on scroll
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'skillProgress 2s forwards';
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    // Add CSS animation for skill progress
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes skillProgress {
+        from { width: 0%; }
+        to { width: var(--skill-level); }
+      }
+    `;
+    document.head.appendChild(style);
   </script>
 </body>
 </html>
