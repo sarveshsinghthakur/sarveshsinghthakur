@@ -10,7 +10,7 @@
   <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn">
   </a>
-  <a href="https://sarveshsinghthakur.github.io/Portfolio/">
+  <a href="https://sarveshsingh09.netlify.app">
     <img src="https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=safari&logoColor=white" alt="Portfolio">
   </a>
   <a href="https://leetcode.com/u/sarvesh8882589477/" target="_blank">
@@ -137,7 +137,7 @@
   <a href="mailto:sarvesh8882589477@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <a href="https://sarveshsinghthakur.github.io/Portfolio/">
+  <a href="https://sarveshsingh09.netlify.app">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   <a href="https://leetcode.com/u/sarvesh8882589477/" target="_blank">
