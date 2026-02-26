@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://i.imgur.com/1ZvVkDc.gif" alt="Cybersecurity Banner" width="100%">
+</p>
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=2E95F7&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Sarvesh+Singh+Thakur!;Full-Stack+Developer+%7C;Data+Scientist+%7C;ECE+Engineer+%7C;Building+Innovative+Tech+Solutions" alt="Typing SVG" />
 </div>
