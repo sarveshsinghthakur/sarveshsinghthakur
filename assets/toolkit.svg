@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="Sarvesh Singh toolkit">
+  <rect width="1200" height="430" fill="#0D1117"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="44" y="52" font-size="18" font-weight="600" fill="#58A6FF">Languages</text><text x="44" y="80" font-size="15" fill="#C9D1D9">Python (primary) · JavaScript · TypeScript · SQL · C++ · C</text>
+    <text x="44" y="122" font-size="18" font-weight="600" fill="#58A6FF">Web &amp; Backend</text><text x="44" y="150" font-size="15" fill="#C9D1D9">FastAPI · Django · Django REST Framework · Flask · Node.js · Express.js · React · Next.js · HTML5 · CSS3</text>
+    <text x="44" y="192" font-size="18" font-weight="600" fill="#58A6FF">Data Science &amp; AI</text><text x="44" y="220" font-size="15" fill="#C9D1D9">Pandas · NumPy · Scikit-learn · TensorFlow · OpenCV · Machine Learning · LangGraph · Qdrant · Embeddings</text>
+    <text x="44" y="262" font-size="18" font-weight="600" fill="#58A6FF">Databases &amp; Cache</text><text x="44" y="290" font-size="15" fill="#C9D1D9">PostgreSQL · Redis · MySQL · MongoDB</text>
+    <text x="44" y="332" font-size="18" font-weight="600" fill="#58A6FF">Security, Ops &amp; Tools</text><text x="44" y="360" font-size="15" fill="#C9D1D9">Cyber Security · JWT Authentication · SEO · AEO · API Testing · Git · Linux (Ubuntu) · Docker · AWS · REST APIs · SSE · CI Checks</text>
+  </g>
+  <g stroke="#30363D" fill="#161B22">
+    <rect x="44" y="382" width="1112" height="1" fill="#30363D"/>
+  </g>
+  <text x="44" y="412" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#7D8590">Skills shown are drawn from portfolio/profile data and verified project/experience usage.</text>
+</svg>

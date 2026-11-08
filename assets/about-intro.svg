@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="About Sarvesh Singh">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#161B22"/><stop offset="1" stop-color="#0D1117"/></linearGradient></defs>
+  <rect width="1200" height="260" rx="18" fill="url(#g)" stroke="#30363D"/>
+  <text x="44" y="58" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#58A6FF">Software Developer &amp; Cyber Security Engineer · Grand Ortus Solution</text>
+  <text x="44" y="96" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#C9D1D9">B.Tech in Electronics &amp; Communication Engineering, DCRUST (Nov 2022 – Jun 2026), CGPA 7.75.</text>
+  <text x="44" y="128" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#C9D1D9">I build full-stack platforms with FastAPI, Django, Next.js and React, and data/ML systems with</text>
+  <text x="44" y="156" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#C9D1D9">Python, LangGraph, Qdrant, PostgreSQL, Redis and OpenCV. At Grand Ortus, I work with cyber</text>
+  <text x="44" y="184" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" fill="#C9D1D9">security clients, maintain company web properties, ship features, and handle SEO/AEO tasks.</text>
+  <text x="44" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#7D8590">Focus: system design · full-stack engineering · data science · agentic AI · secure web development</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Selected certifications for Sarvesh Singh">
+  <rect width="1200" height="420" fill="#0D1117"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#C9D1D9">
+    <text x="44" y="44" font-size="18" font-weight="600" fill="#58A6FF">Recent &amp; AI / Agentic</text>
+    <text x="44" y="74">Tata CodeVita (TCS) · Deloitte Australia Data Analytics Simulation (Forage)</text>
+    <text x="44" y="100">LangChain: Deep Agents · Anthropic: Claude with Anthropic API, MCP, Claude 101, Claude Code in Action, AI Fluency</text>
+    <text x="44" y="126">GeeksforGeeks: Agentic AI, 160 Days of Problem Solving</text>
+
+    <text x="44" y="174" font-size="18" font-weight="600" fill="#58A6FF">Programming &amp; Data</text>
+    <text x="44" y="204">HackerRank: SQL (Advanced), JavaScript (Basic/Intermediate), Python, Software Engineer</text>
+    <text x="44" y="230">OneRoadmap: Data Analyst · Great Learning: Python Fundamentals, Data Structures in C</text>
+    <text x="44" y="256">LinkedIn: Introduction to Career Skills in Data Analytics</text>
+
+    <text x="44" y="304" font-size="18" font-weight="600" fill="#58A6FF">Web Foundations</text>
+    <text x="44" y="334">Great Learning: Front End Development (HTML, CSS), Introduction to JavaScript</text>
+    <text x="44" y="360">DevTown: Backend Web Development (Express/Node.js), JavaScript &amp; React.js Bootcamp, Python &amp; AI Bootcamp</text>
+  </g>
+  <text x="44" y="398" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#7D8590">Certification details and issuing links are represented from portfolio data; see portfolio/resume for full records.</text>
+</svg>

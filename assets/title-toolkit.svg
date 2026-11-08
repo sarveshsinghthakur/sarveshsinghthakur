@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="05 Toolkit — The tools I reach for.">
+  <defs>
+    <linearGradient id="l" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/><stop offset=".55" stop-color="#1F6FEB"/><stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="s" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#58A6FF" stop-opacity="0"/><stop offset=".5" stop-color="#E6EDF3"/><stop offset="1" stop-color="#58A6FF" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1500 0;1500 0" keyTimes="0;.4;1" dur="7s" begin="2s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="#0D1117"/>
+  <text x="44" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#7D8590" letter-spacing="2">05 Toolkit</text>
+  <text x="44" y="90" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#E6EDF3">The tools I reach for.</text>
+  <rect x="44" y="104" width="1112" height="2" fill="url(#l)"/>
+  <rect x="44" y="104" width="1112" height="2" fill="url(#s)" opacity=".5"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Experience timeline for Sarvesh Singh">
+  <rect width="1200" height="520" fill="#0D1117"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">
+    <text x="44" y="48" font-size="18" font-weight="600" fill="#58A6FF">Grand Ortus Solution Private Limited</text><text x="44" y="72" fill="#E6EDF3">Software Developer &amp; Cyber Security Engineer · Oct 2026 – Present</text><text x="44" y="94" fill="#9DA7B3">Cyber security clients, company web properties, feature delivery, SEO/AEO.</text>
+
+    <text x="44" y="136" font-size="18" font-weight="600" fill="#58A6FF">VCBay Solutions Pvt Ltd</text><text x="44" y="160" fill="#E6EDF3">Data Science Intern · Mar 2026 – Sep 2026</text><text x="44" y="182" fill="#9DA7B3">Analytics for client Maxify: preprocessing, EDA, feature engineering, ML workflows.</text>
+
+    <text x="44" y="224" font-size="18" font-weight="600" fill="#58A6FF">Celebal Technologies</text><text x="44" y="248" fill="#E6EDF3">Data Science Intern · Jun 2025 – Aug 2025</text><text x="44" y="270" fill="#9DA7B3">Predictive models with Pandas, NumPy, Scikit-learn; dashboards and reports.</text>
+
+    <text x="44" y="312" font-size="18" font-weight="600" fill="#58A6FF">CodeAlpha</text><text x="44" y="336" fill="#E6EDF3">Full-Stack / Django Developer Intern · May 2024 – Aug 2024</text><text x="44" y="358" fill="#9DA7B3">FashionFusion and Gemini Clone with Django, Next.js, PostgreSQL, AI integration.</text>
+
+    <text x="44" y="400" font-size="18" font-weight="600" fill="#58A6FF">Bharat Internships · LetGlobe · AmpleTrails</text><text x="44" y="424" fill="#E6EDF3">Frontend / UI-UX-Web / Technical Support roles · 2023 – 2024</text><text x="44" y="446" fill="#9DA7B3">React apps (Toolspedia, NewsLoop, Chat-Room), UI/UX and REST work, enterprise biometric support.</text>
+  </g>
+  <text x="44" y="494" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#7D8590">Education: B.Tech ECE, DCRUST (CGPA 7.75, 2022–2026) · Dev Samaj Vidya Niketan School, Gurgaon (86%, 88%).</text>
+</svg>

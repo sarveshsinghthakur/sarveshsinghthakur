@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Vitto Loan Repayment Service">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#161B22"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
+    <radialGradient id="g" cx="84%" cy="30%" r="55%"><stop offset="0" stop-color="#D29922" stop-opacity=".28"/><stop offset="1" stop-color="#D29922" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="330" rx="18" fill="url(#bg)" stroke="#30363D"/>
+  <rect width="1200" height="330" rx="18" fill="url(#g)"/>
+  <text x="44" y="68" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#E6EDF3">Vitto Loan Repayment Service</text>
+  <text x="44" y="108" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" fill="#9DA7B3">Repayment schedules, allocation, outstanding balance tracking, and idempotent payment APIs.</text>
+  <text x="44" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#58A6FF">Next.js · TypeScript · PostgreSQL · Firebase · CI</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="44" y="184" width="220" height="96" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="66" y="226" font-size="28" font-weight="700" fill="#E6EDF3">EMI</text><text x="66" y="254" font-size="14" fill="#8B949E">schedule math</text>
+    <rect x="280" y="184" width="220" height="96" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="302" y="226" font-size="28" font-weight="700" fill="#E6EDF3">Idempotent</text><text x="302" y="254" font-size="14" fill="#8B949E">payment posting</text>
+    <rect x="516" y="184" width="220" height="96" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="538" y="226" font-size="28" font-weight="700" fill="#E6EDF3">CI</text><text x="538" y="254" font-size="14" fill="#8B949E">tests &amp; builds</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="Recognition highlights for Sarvesh Singh">
+  <rect width="1200" height="250" fill="#0D1117"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="34" y="24" width="266" height="202" rx="16" fill="#161B22" stroke="#30363D"/>
+    <text x="56" y="72" font-size="16" fill="#58A6FF">EY Techathon 4.0 / IIT Patna</text>
+    <text x="56" y="112" font-size="30" font-weight="700" fill="#E6EDF3">3rd Place</text>
+    <text x="56" y="144" font-size="15" fill="#9DA7B3">Meme Mastermind</text>
+    <text x="56" y="190" font-size="13" fill="#7D8590">National competitive event</text>
+
+    <rect x="320" y="24" width="266" height="202" rx="16" fill="#161B22" stroke="#30363D"/>
+    <text x="342" y="72" font-size="16" fill="#58A6FF">LeetCode</text>
+    <text x="342" y="112" font-size="30" font-weight="700" fill="#E6EDF3">650+</text>
+    <text x="342" y="144" font-size="15" fill="#9DA7B3">problems solved</text>
+    <text x="342" y="190" font-size="13" fill="#7D8590">DSA practice across core topics</text>
+
+    <rect x="606" y="24" width="266" height="202" rx="16" fill="#161B22" stroke="#30363D"/>
+    <text x="628" y="72" font-size="16" fill="#58A6FF">TCS CodeVita S13</text>
+    <text x="628" y="112" font-size="30" font-weight="700" fill="#E6EDF3">12,583</text>
+    <text x="628" y="144" font-size="15" fill="#9DA7B3">global rank</text>
+    <text x="628" y="190" font-size="13" fill="#7D8590">Competitive programming</text>
+
+    <rect x="892" y="24" width="274" height="202" rx="16" fill="#161B22" stroke="#30363D"/>
+    <text x="914" y="72" font-size="16" fill="#58A6FF">GitHub / Portfolio</text>
+    <text x="914" y="112" font-size="30" font-weight="700" fill="#E6EDF3">54 repos</text>
+    <text x="914" y="144" font-size="15" fill="#9DA7B3">20+ built projects</text>
+    <text x="914" y="190" font-size="13" fill="#7D8590">Full-stack, DS, CV, GenAI</text>
+  </g>
+</svg>
